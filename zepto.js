@@ -938,8 +938,9 @@
   return $
 })()
 
-window.Zepto = Zepto
-window.$ === undefined && (window.$ = Zepto)
+// Don't put Zepto in the window's namespace
+// window.Zepto = Zepto
+// window.$ === undefined && (window.$ = Zepto)
     module.exports = Zepto
     
 ;(function($){
